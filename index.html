@@ -7,45 +7,48 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to the German poem generator</h1>
-    </header>
-
-    <main>
-      <form>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-        />
-        <input type="submit" name="" id="" />
-      </form>
-      <div id="poem">
-        Hier entsteht
-        <br />
-        dein Gedicht
+    <div class="container">
+        <header>
+          <h1>AI German poem generator</h1>
+        </header>
+        <main>
+          <div class="form">
+            <form>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter the topic of the poem"
+                autofocus
+                required
+              />
+              <input type="submit" name="" id="submit-btn" />
+            </form>
+          </div>
+          <div id="poem">
+            <p>
+              <section>Hier entsteht</section> <br />
+              <section>dein Gedicht</section>
+            </p>
+          </div>
+        </main>
+        <footer>
+          This AI project was coded by
+          <a href="https://github.com/elisabethwfm" target="_blank"
+            >Elisabeth Wolfram</a
+          >
+          and is open-sourced on
+          <a
+            href="https://github.com/elisabethwfm/german-poems-generator"
+            target="_blank"
+            >Github</a
+          >
+          and is hosted on
+          <a href="https://german-poem-generator.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </footer>
       </div>
-    </main>
-
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/elisabethwfm" target="_blank"
-        >Elisabeth Wolfram</a
-      >
-      and is open-sourced on
-      <a
-        href="https://github.com/elisabethwfm/german-poems-generator"
-        target="_blank"
-        >Github</a
-      >
-      and is hosted on
-      <a href="https://german-poem-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
 
     <script src="src/index.js"></script>
   </body>

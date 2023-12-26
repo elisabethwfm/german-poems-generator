@@ -1,1 +1,117 @@
+:root {
+  --main-bg-color: #fef4e8;
+  --blue-bg-color: #1989ac;
+  --dark-blue-bg-color: #283e56;
+  --contrast-color: #970747;
+  --border-radius: 5px;
+  --box-shadow: 2px 1px 7px 1px rgba(0, 0, 0, 0.67);
+  --linear-gradient-bg: linear-gradient(
+    131deg,
+    rgba(254, 244, 232, 1) 21%,
+    rgba(25, 137, 172, 0.7203256302521008) 68%,
+    rgba(151, 7, 71, 1) 100%
+  );
+}
 
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--linear-gradient-bg);
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  background-size: cover;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: max-content;
+  margin: 5em auto 0;
+  padding: 1em 2em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 20px !important;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+#submit-btn {
+  background-color: var(--dark-blue-bg-color);
+  color: white;
+}
+
+#submit-btn:hover {
+  background-color: var(--contrast-color);
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  max-width: max-content;
+  margin: 0 auto 30px;
+  background-color: var(--blue-bg-color);
+  padding: 1em;
+  color: white;
+  font-size: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+section {
+  padding-left: 10px;
+  min-height: 25px;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+#poem::before {
+  display: block;
+  content: "";
+  height: 25px;
+  width: 0.1em;
+  background-color: #283e56;
+  position: fixed;
+}
+
+footer {
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto 20px;
+  font-size: 0.8rem;
+}
+
+a {
+  color: var(--contrast-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 298px) {
+  input#submit-btn {
+    margin-left: 10px;
+  }
+}
